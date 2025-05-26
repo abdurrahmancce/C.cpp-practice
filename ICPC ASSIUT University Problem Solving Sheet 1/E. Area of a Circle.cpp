@@ -1,11 +1,15 @@
 //E. Area of a Circle
 
-#include<bits/stdc++.h>
+#include<iostream>
+#include<iomanip>
 using namespace std;
-int main ()
+int main()
 {
-    double r;
+    double r,Area;
     cin>>r;
-    cout<<fixed<<setprecision(9)<<pow(r,2)* M_PI<<endl;
-
+    Area=3.141592653*r*r;
+    cout << fixed << setprecision(9);
+    cout << Area;
+    return 0;
 }
+
