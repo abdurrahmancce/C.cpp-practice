@@ -5,18 +5,15 @@
 using namespace std;
 int main()
 {
-    long long a,b;
+     long long a,b;
     cin>>a>>b;
-    if(a%b == 0)
+    if(a%b==0 || b%a==0)
     {
-        cout<<"Multiples"<<endl;
-    }
-    else if(b%a ==0)
-    {
-        cout<<"Multiples"<<endl;
+        cout<<"Multiples";
     }
     else
     {
-        cout<<"No Multiples"<<endl;
+       cout<<"No Multiples";
     }
+    return 0;
 }
