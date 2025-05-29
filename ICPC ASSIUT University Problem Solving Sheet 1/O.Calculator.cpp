@@ -1,29 +1,31 @@
 //O. Calculator
 
-
-#include<bits/stdc++.h>
+#include<iostream>
 using namespace std;
 int main()
 {
-    long long a,b;
-    char c;
-    cin>>a>>c>>b;
-    switch (c)
+    int A, B;
+    char op;
+
+    cin >> A >> op >> B;
+
+    if (op == '+')
     {
-    case '+':
-        cout<< a+b;
-        break;
-    case '-':
-        cout<<a-b;
-        break;
-    case '*':
-        cout<<a*b;
-        break;
-    case '/':
-        cout<<(int)a/b;
-        break;
-    default:
-        cout<<"You did not select any Calculating symbol";
-        break;
+        cout << A + B << endl;
     }
+    else if (op == '-')
+    {
+        cout << A - B << endl;
+    }
+    else if (op == '*')
+    {
+        cout << A * B << endl;
+    }
+    else if (op == '/')
+    {
+        cout << A / B << endl;
+    }
+
+    return 0;
 }
+
