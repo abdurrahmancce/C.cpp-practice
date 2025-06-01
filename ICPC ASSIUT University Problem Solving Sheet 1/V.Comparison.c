@@ -4,42 +4,15 @@
 using namespace std;
 int main()
 {
-    long long a,b;
-    char c;
-    cin>>a>>c>>b;
-    switch(c)
+    long long num1,num2;
+    char s;
+    cin>>num1>>s>>num2;
+    if((s=='>' && num1>num2) || (s=='<' && num1<num2) ||(s=='=' && num1==num2))
     {
-    case '>':
-        if(a>b)
-        {
-            cout<<"Right";
-        }
-        else
-        {
-            cout<<"Wrong";
-        }
-        break;
-
-    case '<':
-        if(a<b)
-        {
-            cout<<"Right";
-        }
-        else
-        {
-            cout<<"Wrong";
-        }
-        break;
-    case '=':
-        if(a==b)
-        {
-            cout<<"Right";
-        }
-        else
-        {
-            cout<<"Wrong";
-        }
-        break;
+        cout<<"Right";
     }
-
+    else
+    {
+        cout<<"Wrong";
+    }
 }
