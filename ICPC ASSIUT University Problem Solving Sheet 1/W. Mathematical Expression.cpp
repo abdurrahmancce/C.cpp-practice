@@ -1,48 +1,28 @@
 //W.Mathematical Expression
 
-
 #include<bits/stdc++.h>
 using namespace std;
 int main()
 {
-    long long a,b,c;
-    char d,e;
-    cin>>a>>d>>b>>e>>c;
-    switch(d)
+    long long a,b,c,result;
+    char s,q;
+    cin>>a>>s>>b>>q>>c;
+    if(s=='+')
     {
-    case '+':
-        if(c==(a+b))
-        {
-            cout<<"Yes";
-        }
-        else
-        {
-            cout<<a+b;
-        }
-        break;
-
-    case '-':
-        if(c==(a-b))
-        {
-            cout<<"Yes";
-        }
-        else
-        {
-            cout<<a-b;
-        }
-        break;
-
-    case '*':
-        if(c==(a*b))
-        {
-            cout<<"Yes";
-        }
-        else
-        {
-            cout<<a*b;
-        }
-        break;
+        result=a+b;
     }
-
-
+    else if(s=='-')
+    {
+        result=a-b;
+    }else if(s=='*')
+    {
+        result=a*b;
+    }
+    if(result==c)
+    {
+        cout<<"Yes";
+    }else
+    {
+        cout<<result;
+    }
 }
