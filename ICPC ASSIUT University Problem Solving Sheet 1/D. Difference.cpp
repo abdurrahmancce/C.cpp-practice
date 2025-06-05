@@ -1,5 +1,17 @@
 //D. Difference
 
+#include<iostream>
+using namespace std;
+int main()
+{
+    long long a,b,c,d;
+    cin>>a>>b>>c>>d;
+    cout<<"Difference = " <<(a*b)-(c*d);
+}
+
+
+//  Another Method 2
+/*
 #include <iostream>
 using namespace std;
 int main()
@@ -12,4 +24,21 @@ int main()
 
     return 0;
 }
+*/
 
+//  Another Method 3
+
+/*
+#include<iostream>
+using namespace std;
+int main()
+{
+    long long a,b,c,d,e,f,g;
+    cin>>a>>b>>c>>d;
+    e=a*b;
+    f=c*d;
+    g=e-f;
+    cout<<"Difference = "<<g;
+    return 0;
+}
+*/
