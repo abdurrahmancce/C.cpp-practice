@@ -1,19 +1,14 @@
 //B.Basic Data Type
 
-#include <iostream>
+#include<iostream>
 using namespace std;
 int main()
 {
-    int H;
-    long long A;
-    char G;
-    float E;
-    double R;
-    cin>>H>>A>>G>>E>>R;
-    cout<<H<<endl;
-   cout<<A<<endl;
-   cout<<G<<endl;
-   cout<<E<<endl;
-   cout<<R<<endl;
-    return 0;
+    int a;
+    long long b;
+    char ch;
+    float f;
+    double d;
+    cin>>a>>b>>ch>>f>>d;
+    cout<<a<<endl<<b<<endl<<ch<<endl<<f<<endl<<d<<endl;
 }
